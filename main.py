@@ -1,6 +1,7 @@
 import random
 import unicodedata
 import data
+import time
 
 BLACK       = "\033[30m"
 RED         = "\033[31m"
@@ -26,12 +27,19 @@ def normalize(s: str) -> str:
 def ensure_list(val: str | list[str]) -> list:
     return val if isinstance(val, list) else [val]
 
-def print_score(correct: int, incorrect: int, missed: int, num_countries: int) -> None:
+def print_score(correct: int, incorrect: int, missed: int, num_countries: int, start: float, end: float) -> None:
+    elapsed = end - start
+    minutes = int(elapsed // 60)
+    seconds = int(elapsed % 60)
+    time = f"{minutes}:{seconds:02d}"
+
     print(MAGENTA + "\n=== Results ===" + RESET)
     print(GREEN +   "Correct:   " + RESET + f"{correct}")
     print(RED +     "Incorrect: " + RESET + f"{incorrect}")
     print(CYAN +    "Total:     " + RESET + f"{num_countries}")
     print(CYAN +    "Score:     " + RESET + f"{int(round(correct / num_countries, 2) * 100)}%")
+    print(CYAN +    "Time:      " + RESET + time)
+
     if missed:
         print(MAGENTA + "\nYou missed:" + RESET)
         for country, caps in missed:
@@ -75,6 +83,7 @@ def main() -> None:
         print(MAGENTA + f"\n=== {ans.upper()} ===" + RESET)
         print(GREEN + "Type 'quit' or 'clear' to stop, 'skip' to move to the next country." + RESET)
 
+        start = time.time()
         for country in countries:
             country_capitals = ensure_list(country_to_capital[country])
             needed = {normalize(c) for c in country_capitals}
@@ -86,7 +95,7 @@ def main() -> None:
             while True:
                 ans = input("Capital: ").strip()
                 if ans.lower() in ("quit", "clear"):
-                    print_score(correct, incorrect, missed, num_countries)
+                    print_score(correct, incorrect, missed, num_countries, start, time.time())
                     print("Quitting…")
                     quit = True
                     break
@@ -123,7 +132,7 @@ def main() -> None:
                 break
 
         if quit is False:
-            print_score(correct, incorrect, missed, num_countries)
+            print_score(correct, incorrect, missed, num_countries, start, time.time())
 
 if __name__ == "__main__":
     main()
