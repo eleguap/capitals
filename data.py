@@ -1,3 +1,14 @@
+CUSTOM = {
+    'Isle of Man (UK)': ['Douglas'],
+    'Guernsey (UK)': ['Saint Peter Port'],
+    'Faroe Islands (Denmark)': ['Tórshavn'],
+    'Jersey (UK)': ['Saint Helier'],
+    'Crimea': ['Simferopol'],
+    'Gibraltar (UK)': ['Gibraltar'],
+    'Transnistria': ['Tiraspol'],
+    'Scotland (UK)': ['Edinburgh']
+}
+
 US = {
     "Alabama": "Montgomery",
     "Alaska": "Juneau",
@@ -53,6 +64,7 @@ US = {
 
 NORTH_AMERICA = {
     "Canada": "Ottawa",
+    "Quebec": "Quebec City",
     "United States": "Washington, D.C.",
     "Mexico": "Mexico City",
     "Belize": "Belmopan",
@@ -87,7 +99,7 @@ CARIBBEAN = {
     "Bermuda (UK)": "Hamilton",
     "British Virgin Islands (UK)": "Road Town",
     "Cayman Islands (UK)": "George Town",
-    "Montserrat (UK)": ["Plymouth", "Brades"], # offical vs defacto
+    "Montserrat (UK)": ["Plymouth", "Brades", "Little Bay"], # offical vs defacto
     "Turks and Caicos Islands (UK)": "Cockburn Town",
 
     # US Territories
@@ -134,6 +146,7 @@ EUROPE = {
     "Belgium": "Brussels",
     "Bosnia and Herzegovina": "Sarajevo",
     "Bulgaria": "Sofia",
+    "Catalonia": "Barcelona",
     "Croatia": "Zagreb",
     "Cyprus": "Nicosia",
     "Czech Republic": "Prague",
@@ -164,6 +177,7 @@ EUROPE = {
     "Romania": "Bucharest",
     "Russia": "Moscow",
     "San Marino": "San Marino",
+    "Scotland (UK)": "Edinburgh",
     "Serbia": "Belgrade",
     "Slovakia": "Bratislava",
     "Slovenia": "Ljubljana",
@@ -338,7 +352,7 @@ OCEANIA = {
     "Norfolk Island (Australia)": "Kingston",
     "Northern Mariana Islands (US)": "Saipan",
     "Pitcairn Islands (UK)": "Adamstown",
-    "Tokelau (NZ)": "Nukunonu",
+    "Tokelau (NZ)": ["Fakaofo, Nukunonu", "Atafu"],
     "Wallis and Futuna (France)": "Mata-Utu",
 
     # Autonomous / disputed region
@@ -348,11 +362,12 @@ OCEANIA = {
 class Capitals():
     def __init__(self):
         self.capitals = {
+            "custom": CUSTOM,
             "us": US,
-            "north america": NORTH_AMERICA,
-            "south america": SOUTH_AMERICA,
+            "na": NORTH_AMERICA,
+            "sam": SOUTH_AMERICA,
             "caribbean": CARIBBEAN,
-            "europe": EUROPE,
+            "eu": EUROPE,
             "africa": AFRICA,
             "asia": ASIA,
             "oceania": OCEANIA
