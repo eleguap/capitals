@@ -1,12 +1,13 @@
 CUSTOM = {
-    'Isle of Man (UK)': ['Douglas'],
-    'Guernsey (UK)': ['Saint Peter Port'],
-    'Faroe Islands (Denmark)': ['Tórshavn'],
-    'Jersey (UK)': ['Saint Helier'],
-    'Crimea': ['Simferopol'],
-    'Gibraltar (UK)': ['Gibraltar'],
-    'Transnistria': ['Tiraspol'],
-    'Scotland (UK)': ['Edinburgh']
+    'Malaysia': ['Kuala Lumpur', 'Putrajaya'],
+    'South Ossetia': ['Tskhinvali'],
+    'Tibet (AUT within China)': ['Lhasa'],
+    'Yemen': ["Sana'a", 'Aden'],
+    'Sri Lanka': ['Sri Jayawardenepura Kotte', 'Colombo'],
+    'Abkhazia': ['Sukhumi'],
+    'Palestine': ['Ramallah', 'Jerusalem'],
+    'Artsakh (Nagorno-Karabakh)': ['Stepanakert'],
+    'Kurdistan (Iraqi Kurdistan Region)': ['Erbil'],
 }
 
 US = {
@@ -96,7 +97,6 @@ CARIBBEAN = {
 
     # British Overseas Territories
     "Anguilla (UK)": "The Valley",
-    "Bermuda (UK)": "Hamilton",
     "British Virgin Islands (UK)": "Road Town",
     "Cayman Islands (UK)": "George Town",
     "Montserrat (UK)": ["Plymouth", "Brades", "Little Bay"], # offical vs defacto
@@ -135,7 +135,10 @@ SOUTH_AMERICA = {
     "Uruguay": "Montevideo",
     "Venezuela": "Caracas",
     "French Guiana (France)": "Cayenne",
-    "Falkland Islands (UK)": "Stanley"
+    "Falkland Islands (UK)": "Stanley",
+    "South Georgia and the South Sandwich Islands (UK)": "King Edwards Point",
+    "Bouvet Island (Norway)": "Bouvet Island",
+    "Easter Island (Chile)": "Hanga Roa"
 }
 
 EUROPE = {
@@ -190,6 +193,7 @@ EUROPE = {
 
     # Disputed / partially recognized regions
     "Crimea": "Simferopol",
+    "Northern Cyprus": "North Nicosia",
     "Transnistria": "Tiraspol",
 
     # Territories
@@ -260,6 +264,9 @@ AFRICA = {
     "Western Sahara": ["Laayoune", "Tifariti"],  # proclaimed vs de facto administration
     "Somaliland": "Hargeisa",
     "Darfur": "Al-Fashir",
+
+    # Territories
+    "French Southern and Antarctic Lands (France)": ["Saint Pierre", "Réunion"],
 }
 
 ASIA = {
@@ -312,17 +319,20 @@ ASIA = {
     "Vietnam": "Hanoi",
     "Yemen": ["Sana'a", "Aden"],  # de jure vs interim seat
 
+    # Territories
+    "British Indian Ocean Territory": "Diego Garcia",
+
     # Disputed / partially recognized / autonomous entities
     "Taiwan": "Taipei",
-    "Palestine": ["Ramallah", "East Jerusalem"],
-    "Northern Cyprus": "North Nicosia",
+    "Palestine": ["Ramallah", "Jerusalem"],
     "Abkhazia": "Sukhumi",
     "South Ossetia": "Tskhinvali",
     "Artsakh (Nagorno-Karabakh)": "Stepanakert",
     "Kurdistan (Iraqi Kurdistan Region)": "Erbil",
     "Hong Kong (China SAR)": "Hong Kong",
     "Macau (China SAR)": "Macau",
-    "Tibet (AUT within China)": "Lhasa"
+    "Tibet (AUT within China)": "Lhasa",
+    "Jammu and Kashmir": ["Srinagar", "Jammu"],
 }
 
 OCEANIA = {
@@ -354,6 +364,9 @@ OCEANIA = {
     "Pitcairn Islands (UK)": "Adamstown",
     "Tokelau (NZ)": ["Fakaofo, Nukunonu", "Atafu"],
     "Wallis and Futuna (France)": "Mata-Utu",
+    "Heard Island and McDonald Islands (Australia)": "Heard Island and McDonald Islands",
+    "Cocos Islands (Australia)": "West Island",
+    "Christmas Island (Australia)": "Flying Fish Cove",
 
     # Autonomous / disputed region
     "Bougainville (PNG)": "Buka"

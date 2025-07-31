@@ -1,7 +1,4 @@
-import random
-import unicodedata
-import data
-import time
+import random, unicodedata, data, time, json
 
 BLACK       = "\033[30m"
 RED         = "\033[31m"
@@ -44,9 +41,14 @@ def print_score(correct: int, incorrect: int, missed: int, num_countries: int, s
         print(MAGENTA + "\nYou missed:" + RESET)
         for country, caps in missed:
             print(f" - {country}: {', '.join(caps)}")
-        print("")
-        for country, caps in missed:
-            print(f"'{country}': {caps}")
+
+        print(MAGENTA + "\nReview:" + RESET)
+        print("CUSTOM = {")
+        for i, (country, capitals) in enumerate(missed):
+            comma = ',' if i < len(missed) - 1 else ''
+            capitals_str = ', '.join(f'"{capital}"' for capital in capitals)
+            print(f'    "{country}": [{capitals_str}]{comma}')
+        print("}")
     print(MAGENTA + "=" * 15 + RESET)
 
 def main() -> None:
@@ -81,7 +83,7 @@ def main() -> None:
         quit = False
 
         print(MAGENTA + f"\n=== {ans.upper()} ===" + RESET)
-        print(GREEN + "Type 'quit' or 'clear' to stop, 'skip' to move to the next country." + RESET)
+        print(GREEN + "Type 'quit' or 'clear' to stop, 'skip' to move to the next " + ("state." if ans.lower() == "us" else "country.") + RESET)
 
         start = time.time()
         for country in countries:
