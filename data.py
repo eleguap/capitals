@@ -1,13 +1,4 @@
 CUSTOM = {
-    'Malaysia': ['Kuala Lumpur', 'Putrajaya'],
-    'South Ossetia': ['Tskhinvali'],
-    'Tibet (AUT within China)': ['Lhasa'],
-    'Yemen': ["Sana'a", 'Aden'],
-    'Sri Lanka': ['Sri Jayawardenepura Kotte', 'Colombo'],
-    'Abkhazia': ['Sukhumi'],
-    'Palestine': ['Ramallah', 'Jerusalem'],
-    'Artsakh (Nagorno-Karabakh)': ['Stepanakert'],
-    'Kurdistan (Iraqi Kurdistan Region)': ['Erbil'],
 }
 
 US = {
@@ -339,9 +330,9 @@ OCEANIA = {
     # Sovereign states
     "Australia": "Canberra",
     "Fiji": "Suva",
-    "Kiribati": "Tarawa",
+    "Kiribati": "South Tarawa",
     "Marshall Islands": "Majuro",
-    "Micronesia (Federated States of)": "Palikir",
+    "Federated States of Micronesia": "Palikir",
     "Nauru": "Yaren",  # Nauru has no official capital, Yaren acts as government seat
     "New Zealand": "Wellington",
     "Palau": "Ngerulmud",
@@ -362,7 +353,7 @@ OCEANIA = {
     "Norfolk Island (Australia)": "Kingston",
     "Northern Mariana Islands (US)": "Saipan",
     "Pitcairn Islands (UK)": "Adamstown",
-    "Tokelau (NZ)": ["Fakaofo, Nukunonu", "Atafu"],
+    "Tokelau (NZ)": ["Fakaofo", "Nukunonu", "Atafu"],
     "Wallis and Futuna (France)": "Mata-Utu",
     "Heard Island and McDonald Islands (Australia)": "Heard Island and McDonald Islands",
     "Cocos Islands (Australia)": "West Island",
