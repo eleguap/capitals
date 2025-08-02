@@ -1,4 +1,4 @@
-import random, unicodedata, data, time, json
+import random, unicodedata, data, time
 
 BLACK       = "\033[30m"
 RED         = "\033[31m"
@@ -60,19 +60,19 @@ def main() -> None:
 
         # Region
         while True:
-            print(CYAN + "\nRegions: " + RESET + MAGENTA + ", ".join(capitals.capitals.keys()) + RESET)
-            ans = input(CYAN + "Enter Region: " + RESET).strip().lower()
+            print(CYAN + "\nRegions: " + RESET + MAGENTA + ", ".join(capitals.capitals.keys()) + ", all" + RESET)
+            region_ans = input(CYAN + "Enter Region: " + RESET).strip().lower()
 
-            if ans in ("quit", "clear"):
+            if region_ans in ("quit", "clear"):
                 print("Quitting…\n")
                 return
 
             try:
-                country_to_capital = capitals.capitals[ans]
+                country_to_capital = capitals.capitals[region_ans] if region_ans != "all" else capitals.all()
                 countries = list(country_to_capital.keys())
                 break
             except KeyError:
-                print(f"{ans} not found.")
+                print(f"{region_ans} not found.")
 
         # Game
         random.shuffle(countries)
@@ -82,8 +82,8 @@ def main() -> None:
         num_countries = len(countries)
         quit = False
 
-        print(MAGENTA + f"\n=== {ans.upper()} ===" + RESET)
-        print(GREEN + "Type 'quit' or 'clear' to stop, 'skip' to move to the next " + ("state." if ans.lower() == "us" else "country.") + RESET)
+        print(MAGENTA + f"\n=== {region_ans.upper()} ===" + RESET)
+        print(GREEN + "Type 'quit' or 'clear' to stop, 'skip' to move to the next " + ("state." if region_ans.lower() == "us" else "country.") + RESET)
 
         start = time.time()
         for country in countries:
@@ -91,7 +91,7 @@ def main() -> None:
             needed = {normalize(c) for c in country_capitals}
             got = set()
 
-            print(CYAN + f"\n{"Country" if ans != "us" else "State"}: {country}" + RESET)
+            print(CYAN + f"\n{"Country" if country not in capitals.capitals["us"] else "  State"}: {country}" + RESET)
 
             failed_once = False
             while True:

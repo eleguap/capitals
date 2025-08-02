@@ -294,7 +294,6 @@ ASIA = {
     "Pakistan": "Islamabad",
     "Philippines": "Manila",
     "Qatar": "Doha",
-    "Russia": "Moscow",
     "Saudi Arabia": "Riyadh",
     "Singapore": "Singapore",
     "South Korea": "Seoul",
@@ -376,3 +375,13 @@ class Capitals():
             "asia": ASIA,
             "oceania": OCEANIA
         }
+
+    def all(self):
+        combined = {}
+        for region, region_dict in self.capitals.items():
+            if region == "custom":
+                continue
+            for country, capital in region_dict.items():
+                if country not in combined:
+                    combined[country] = capital
+        return combined
