@@ -11,7 +11,7 @@ US = {
     "Connecticut": "Hartford",
     "Delaware": "Dover",
     "Florida": "Tallahassee",
-    "Georgia": "Atlanta",
+    "Georgia ": "Atlanta",
     "Hawaii": "Honolulu",
     "Idaho": "Boise",
     "Illinois": "Springfield",
