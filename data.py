@@ -90,7 +90,7 @@ CARIBBEAN = {
     "Anguilla (UK)": "The Valley",
     "British Virgin Islands (UK)": "Road Town",
     "Cayman Islands (UK)": "George Town",
-    "Montserrat (UK)": ["Plymouth", "Brades", "Little Bay"], # offical vs defacto
+    "Montserrat (UK)": ["Plymouth", "Brades", "Little Bay"], # offical vs defacto vs construction
     "Turks and Caicos Islands (UK)": "Cockburn Town",
 
     # US Territories
@@ -211,7 +211,7 @@ AFRICA = {
     "DR Congo": "Kinshasa",
     "Republic of the Congo": "Brazzaville",
     "Djibouti": "Djibouti City",
-    "Egypt": "Cairo",
+    "Egypt": ["Cairo", "New Administrative Capital"],
     "Equatorial Guinea": "Malabo",
     "Eritrea": "Asmara",
     "Eswatini": ["Mbabane", "Lobamba"],  # administrative vs legislative
