@@ -199,7 +199,7 @@ EUROPE = {
     "Guernsey (UK)": "Saint Peter Port",
     "Faroe Islands (Denmark)": "Tórshavn",
     "Jan Mayen (Norway)": "Olonkinbyen",
-    "Svalbard": "Longyearbyen",
+    "Svalbard (Norway)": "Longyearbyen",
     "Åland Islands (Finland)": "Mariehamn",
 }
 
