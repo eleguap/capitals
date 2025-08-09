@@ -67,11 +67,13 @@ NORTH_AMERICA = {
     "Nicaragua": "Managua",
     "Panama": "Panama City",
     "Greenland": "Nuuk",
-    "Bermuda": "Hamilton"
+    "Bermuda": "Hamilton",
+
+    # Territories
+    "Saint Pierre and Miquelon (France)": "Saint-Pierre"
 }
 
 CARIBBEAN = {
-    # Sovereign countries
     "Antigua and Barbuda": "Saint John's",
     "Bahamas": "Nassau",
     "Barbados": "Bridgetown",
@@ -86,7 +88,7 @@ CARIBBEAN = {
     "Saint Vincent and the Grenadines": "Kingstown",
     "Trinidad and Tobago": "Port of Spain",
 
-    # British Overseas Territories
+    # British Territories
     "Anguilla (UK)": "The Valley",
     "British Virgin Islands (UK)": "Road Town",
     "Cayman Islands (UK)": "George Town",
@@ -125,11 +127,14 @@ SOUTH_AMERICA = {
     "Suriname": "Paramaribo",
     "Uruguay": "Montevideo",
     "Venezuela": "Caracas",
+
+    # Territories
     "French Guiana (France)": "Cayenne",
     "Falkland Islands (UK)": "Stanley",
     "South Georgia and the South Sandwich Islands (UK)": "King Edwards Point",
     "Bouvet Island (Norway)": "Bouvet Island",
-    "Easter Island (Chile)": "Hanga Roa"
+    "Easter Island (Chile)": "Hanga Roa",
+    "Juan Fernández Islands (Chile)": "San Juan Bautista",
 }
 
 EUROPE = {
@@ -182,7 +187,7 @@ EUROPE = {
     "United Kingdom": "London",
     "Vatican City": "Vatican City",
 
-    # Disputed / partially recognized regions
+    # Disputed/partially-recognized
     "Crimea": "Simferopol",
     "Northern Cyprus": "North Nicosia",
     "Transnistria": "Tiraspol",
@@ -192,12 +197,16 @@ EUROPE = {
     "Isle of Man (UK)": "Douglas",
     "Jersey (UK)": "Saint Helier",
     "Guernsey (UK)": "Saint Peter Port",
-    "Faroe Islands (Denmark)": "Tórshavn"
+    "Faroe Islands (Denmark)": "Tórshavn",
+    "Jan Mayen (Norway)": "Olonkinbyen",
+    "Svalbard": "Longyearbyen",
+    "Åland Islands (Finland)": "Mariehamn",
 }
 
 AFRICA = {
     "Algeria": "Algiers",
     "Angola": "Luanda",
+    "Ascension Island (UK)": "Georgetown",
     "Benin": "Porto-Novo",
     "Botswana": "Gaborone",
     "Burkina Faso": "Ouagadougou",
@@ -218,6 +227,7 @@ AFRICA = {
     "Ethiopia": "Addis Ababa",
     "Gabon": "Libreville",
     "The Gambia": "Banjul",
+    "Tristan da Cunha (UK)": "Edinburgh of the Seven Seas",
     "Ghana": "Accra",
     "Guinea": "Conakry",
     "Guinea-Bissau": "Bissau",
@@ -237,6 +247,7 @@ AFRICA = {
     "Nigeria": "Abuja",
     "Rwanda": "Kigali",
     "São Tomé and Príncipe": "São Tomé",
+    "Saint Helena (UK)": "Jamestown",
     "Senegal": "Dakar",
     "Seychelles": "Victoria",
     "Sierra Leone": "Freetown",
@@ -261,7 +272,6 @@ AFRICA = {
 }
 
 ASIA = {
-    # Sovereign states (widely recognized)
     "Afghanistan": "Kabul",
     "Armenia": "Yerevan",
     "Azerbaijan": "Baku",
@@ -312,7 +322,7 @@ ASIA = {
     # Territories
     "British Indian Ocean Territory": "Diego Garcia",
 
-    # Disputed / partially recognized / autonomous entities
+    # Disputed/partially-recognized and autonomous regions
     "Taiwan": "Taipei",
     "Palestine": ["Ramallah", "Jerusalem"],
     "Abkhazia": "Sukhumi",
@@ -326,7 +336,6 @@ ASIA = {
 }
 
 OCEANIA = {
-    # Sovereign states
     "Australia": "Canberra",
     "Fiji": "Suva",
     "Kiribati": "South Tarawa",
@@ -342,7 +351,7 @@ OCEANIA = {
     "Tuvalu": "Funafuti",
     "Vanuatu": "Port Vila",
 
-    # Territories and dependencies
+    # Territories
     "American Samoa (US)": "Pago Pago",
     "Cook Islands (NZ)": "Avarua",
     "French Polynesia (France)": "Papeete",
@@ -358,7 +367,7 @@ OCEANIA = {
     "Cocos Islands (Australia)": "West Island",
     "Christmas Island (Australia)": "Flying Fish Cove",
 
-    # Autonomous / disputed region
+    # Disputed/partially-recognized and autonomous regions
     "Bougainville (PNG)": "Buka"
 }
 
