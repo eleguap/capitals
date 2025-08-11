@@ -131,8 +131,7 @@ SOUTH_AMERICA = {
     # Territories
     "French Guiana (France)": "Cayenne",
     "Falkland Islands (UK)": "Stanley",
-    "South Georgia and the South Sandwich Islands (UK)": "King Edwards Point",
-    "Bouvet Island (Norway)": "Bouvet Island",
+    "South Georgia and the South Sandwich Islands (UK)": "King Edward Point",
     "Easter Island (Chile)": "Hanga Roa",
     "Juan Fernández Islands (Chile)": "San Juan Bautista",
 }
@@ -269,6 +268,7 @@ AFRICA = {
 
     # Territories
     "French Southern and Antarctic Lands (France)": ["Saint Pierre", "Réunion"],
+    "Bouvet Island (Norway)": "Bouvet Island",
 }
 
 ASIA = {
