@@ -305,6 +305,7 @@ ASIA = {
     "Philippines": "Manila",
     "Qatar": "Doha",
     "Saudi Arabia": "Riyadh",
+    "Siachen Glacier": "Siachen Glacier",
     "Singapore": "Singapore",
     "South Korea": "Seoul",
     "Sri Lanka": ["Sri Jayawardenepura Kotte", "Colombo"],  # legislative vs commercial
