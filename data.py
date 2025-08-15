@@ -267,8 +267,12 @@ AFRICA = {
     "Darfur": "Al-Fashir",
 
     # Territories
-    "French Southern and Antarctic Lands (France)": ["Saint Pierre", "Réunion"],
+    "French Southern and Antarctic Lands (France)": "Saint Pierre",
+    "Mayotte (France)": "Mamoudzou",
+    "Réunion (France)": "Saint-Denis",
+    "Rodrigues (Mauritius)": "Port Mathurin",
     "Bouvet Island (Norway)": "Bouvet Island",
+    "Canary Islands (Spain)": ["Santa Cruz de Tenerife", "Las Palmas de Gran Canaria"]
 }
 
 ASIA = {
@@ -334,6 +338,7 @@ ASIA = {
     "Macau (China SAR)": "Macau",
     "Tibet (AUT within China)": "Lhasa",
     "Jammu and Kashmir": ["Srinagar", "Jammu"],
+    "Gaza Strip": "Gaza City"
 }
 
 OCEANIA = {
