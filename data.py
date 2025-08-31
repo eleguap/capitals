@@ -1,8 +1,4 @@
 CUSTOM = {
-    "Rodrigues (Mauritius)": ["Port Mathurin"],
-    "Réunion (France)": ["Saint-Denis"],
-    "Canary Islands (Spain)": ["Santa Cruz de Tenerife", "Las Palmas de Gran Canaria"],
-    "Mayotte (France)": ["Mamoudzou"]
 }
 
 US = {
