@@ -1,4 +1,8 @@
 CUSTOM = {
+    "Rodrigues (Mauritius)": ["Port Mathurin"],
+    "Réunion (France)": ["Saint-Denis"],
+    "Canary Islands (Spain)": ["Santa Cruz de Tenerife", "Las Palmas de Gran Canaria"],
+    "Mayotte (France)": ["Mamoudzou"]
 }
 
 US = {
@@ -185,6 +189,7 @@ EUROPE = {
     "Ukraine": "Kyiv",
     "United Kingdom": "London",
     "Vatican City": "Vatican City",
+    "Wales (UK)": "Cardiff",
 
     # Disputed/partially-recognized
     "Crimea": "Simferopol",
